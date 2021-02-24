@@ -8,18 +8,5 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
-    @CallSuper
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getLayoutRes() > 0) {
-            setContentView(getLayoutRes());
-        }
-
-        onViewCreated();
-    }
-
-    public abstract void onViewCreated();
-
     public abstract int getLayoutRes();
 }
