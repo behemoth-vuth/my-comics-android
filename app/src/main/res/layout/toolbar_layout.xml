@@ -8,14 +8,17 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="#28261e"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icMenuLeft"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@mipmap/ic_launcher" />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:tint="@color/colorWhite" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -25,22 +28,25 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="44dp"
+                android:layout_height="38dp"
+                android:layout_marginHorizontal="8dp"
+                android:src="@drawable/ic_mangadex" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_mangadex"
-                android:text="MangaDex" />
+                android:text="MangaDex"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icMenuRight"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@mipmap/ic_launcher" />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:tint="@color/colorWhite" />
     </LinearLayout>
 
     <View
