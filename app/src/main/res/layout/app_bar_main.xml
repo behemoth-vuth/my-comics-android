@@ -16,19 +16,23 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
-        android:background="#80000000"
+        android:background="#403a2c"
         android:gravity="center"
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:srcCompat="@drawable/ic_menu_camera" />
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_upload" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:textFontWeight="900"
             android:text="Upcoming Comics" />
     </LinearLayout>
 
@@ -45,7 +49,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#CCC"
+            android:background="#605d48"
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:text="This Week" />
 
@@ -53,7 +58,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#80000000"
+            android:background="#403a2c"
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:text="This Month" />
     </LinearLayout>
@@ -63,7 +69,7 @@
         android:layout_height="5dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:background="#CCC" />
+        android:background="#605d48" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvUpcomingComics"

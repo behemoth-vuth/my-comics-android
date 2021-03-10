@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#25221d">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ic_upload"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_book_of_black_cover_closed"
+                    android:tint="#FFF"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="Magic Fairy"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#83F03A38"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_notes"
+                    android:tint="#FFF"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvChapter"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="Vol 6"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_group"
+                    android:tint="#FFF"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="Kim Dong Publisher"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_clock"
+                    android:tint="#FFF"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:text="Friday"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#83F03A38"></LinearLayout>
+</LinearLayout>
