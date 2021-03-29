@@ -15,10 +15,13 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icMenuLeft"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bordered_rectangle"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
             android:src="@drawable/ic_baseline_menu_24"
-            android:tint="@color/colorWhite" />
+            android:tint="#80FFFFFF" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -43,14 +46,17 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icMenuRight"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bordered_rectangle"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
             android:src="@drawable/ic_baseline_settings_24"
-            android:tint="@color/colorWhite" />
+            android:tint="#80FFFFFF" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#CCC" />
+        android:layout_height="3dp"
+        android:background="@color/colorBorder" />
 </LinearLayout>
