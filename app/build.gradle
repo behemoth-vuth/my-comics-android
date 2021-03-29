@@ -67,6 +67,9 @@ android {
     productFlavors {
         beta {
             buildConfigField "vn.behemoth.mycomics.Env", "Env", "vn.behemoth.mycomics.Env.BETA"
+
+            versionCode 10000
+            versionName "1.0.005479"
         }
 
         stable {
