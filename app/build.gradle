@@ -17,6 +17,26 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
 
+    // Create a variable called keystorePropertiesFile, and initialize it to your
+    // keystore.properties file, in the rootProject folder.
+    def keystorePropertiesFile = rootProject.file("local.properties")
+
+    // Initialize a new Properties() object called keystoreProperties.
+    def keystoreProperties = new Properties()
+
+    // Load your keystore.properties file into the keystoreProperties object.
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+    // cấu hình signing cho app
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
     buildTypes {
         release {
             // không cho phép debug
@@ -31,11 +51,15 @@ android {
             // chỉ ra đường dẫn đến file proguard.txt
             // file proguard.txt là file chứa các config để obfuscate code code
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
         }
 
         debug {
             // cho phép debug
             debuggable = true
+
+            signingConfig signingConfigs.release
         }
     }
 
