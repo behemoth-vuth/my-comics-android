@@ -24,6 +24,14 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (BuildConfig.Env == Env.BETA) {
+            // bản beta
+        } else if (BuildConfig.Env == Env.STABLE) {
+            // bản STABLE
+        } else if (BuildConfig.Env == Env.ROLL_OUT) {
+            // bản ROLL_OUT
+        }
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         binding = ActivityMainBinding.inflate(getLayoutInflater());

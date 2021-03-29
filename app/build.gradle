@@ -19,8 +19,38 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            // không cho phép debug
+            debuggable = false
+
+            // optimize code, bỏ code không sử dụng, check 64k method
+            minifyEnabled true
+
+            // bỏ resource không sử dụng
+            shrinkResources true
+
+            // chỉ ra đường dẫn đến file proguard.txt
+            // file proguard.txt là file chứa các config để obfuscate code code
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            // cho phép debug
+            debuggable = true
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        beta {
+            buildConfigField "vn.behemoth.mycomics.Env", "Env", "vn.behemoth.mycomics.Env.BETA"
+        }
+
+        stable {
+            buildConfigField "vn.behemoth.mycomics.Env", "Env", "vn.behemoth.mycomics.Env.STABLE"
+        }
+
+        rollout {
+            buildConfigField "vn.behemoth.mycomics.Env", "Env", "vn.behemoth.mycomics.Env.ROLL_OUT"
         }
     }
 
